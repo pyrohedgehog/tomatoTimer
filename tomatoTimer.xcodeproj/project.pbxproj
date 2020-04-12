@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		4B50A3992443A47B000EC8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3982443A47B000EC8F4 /* AppDelegate.swift */; };
 		4B50A39B2443A47B000EC8F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A39A2443A47B000EC8F4 /* SceneDelegate.swift */; };
-		4B50A39D2443A47B000EC8F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A39C2443A47B000EC8F4 /* ViewController.swift */; };
 		4B50A3A02443A47B000EC8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B50A39E2443A47B000EC8F4 /* Main.storyboard */; };
 		4B50A3A32443A47B000EC8F4 /* tomatoTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3A12443A47B000EC8F4 /* tomatoTimer.xcdatamodeld */; };
 		4B50A3A52443A47C000EC8F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B50A3A42443A47C000EC8F4 /* Assets.xcassets */; };
 		4B50A3A82443A47C000EC8F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B50A3A62443A47C000EC8F4 /* LaunchScreen.storyboard */; };
 		4B50A3B32443A47C000EC8F4 /* tomatoTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3B22443A47C000EC8F4 /* tomatoTimerTests.swift */; };
 		4B50A3BE2443A47C000EC8F4 /* tomatoTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3BD2443A47C000EC8F4 /* tomatoTimerUITests.swift */; };
+		4B50A3CE2443A9E8000EC8F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3CD2443A9E8000EC8F4 /* MainViewController.swift */; };
+		4B50A3D02443AA21000EC8F4 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3CF2443AA21000EC8F4 /* CellController.swift */; };
+		4B50A3D22443AAE8000EC8F4 /* TomatoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3D12443AAE8000EC8F4 /* TomatoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		4B50A3952443A47B000EC8F4 /* tomatoTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tomatoTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B50A3982443A47B000EC8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B50A39A2443A47B000EC8F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B50A39C2443A47B000EC8F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B50A39F2443A47B000EC8F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B50A3A22443A47B000EC8F4 /* tomatoTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tomatoTimer.xcdatamodel; sourceTree = "<group>"; };
 		4B50A3A42443A47C000EC8F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		4B50A3B92443A47C000EC8F4 /* tomatoTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tomatoTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B50A3BD2443A47C000EC8F4 /* tomatoTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomatoTimerUITests.swift; sourceTree = "<group>"; };
 		4B50A3BF2443A47C000EC8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B50A3CD2443A9E8000EC8F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4B50A3CF2443AA21000EC8F4 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		4B50A3D12443AAE8000EC8F4 /* TomatoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				4B50A3982443A47B000EC8F4 /* AppDelegate.swift */,
+				4B50A3D12443AAE8000EC8F4 /* TomatoCell.swift */,
 				4B50A39A2443A47B000EC8F4 /* SceneDelegate.swift */,
-				4B50A39C2443A47B000EC8F4 /* ViewController.swift */,
 				4B50A39E2443A47B000EC8F4 /* Main.storyboard */,
+				4B50A3CD2443A9E8000EC8F4 /* MainViewController.swift */,
+				4B50A3CF2443AA21000EC8F4 /* CellController.swift */,
 				4B50A3A42443A47C000EC8F4 /* Assets.xcassets */,
 				4B50A3A62443A47C000EC8F4 /* LaunchScreen.storyboard */,
 				4B50A3A92443A47C000EC8F4 /* Info.plist */,
@@ -262,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B50A39D2443A47B000EC8F4 /* ViewController.swift in Sources */,
 				4B50A3A32443A47B000EC8F4 /* tomatoTimer.xcdatamodeld in Sources */,
+				4B50A3D22443AAE8000EC8F4 /* TomatoCell.swift in Sources */,
 				4B50A3992443A47B000EC8F4 /* AppDelegate.swift in Sources */,
 				4B50A39B2443A47B000EC8F4 /* SceneDelegate.swift in Sources */,
+				4B50A3CE2443A9E8000EC8F4 /* MainViewController.swift in Sources */,
+				4B50A3D02443AA21000EC8F4 /* CellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = tomatoTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = tomatoTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
