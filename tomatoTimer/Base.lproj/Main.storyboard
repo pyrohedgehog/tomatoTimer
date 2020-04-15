@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="tomatoTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CnR-wl-QH1">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="29" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CnR-wl-QH1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TomatoCell" id="1Fj-mD-bvU" customClass="CellController" customModule="tomatoTimer" customModuleProvider="target">
@@ -54,11 +54,44 @@
                     <navigationItem key="navigationItem" id="jVS-Rm-EYg"/>
                     <connections>
                         <outlet property="tableView" destination="CnR-wl-QH1" id="4eZ-hh-RSg"/>
+                        <segue destination="z2f-9E-5Px" kind="presentation" identifier="AppendTransition" id="6ZF-UM-TT5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Append View Controller-->
+        <scene sceneID="vbl-Sh-jBZ">
+            <objects>
+                <viewController id="z2f-9E-5Px" customClass="AppendViewController" customModule="tomatoTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raS-vH-hVO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE2-le-agu">
+                                <rect key="frame" x="128" y="633" width="159" height="117"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createButton:" destination="z2f-9E-5Px" eventType="touchUpInside" id="F6a-qG-qdj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oE2-le-agu" firstAttribute="centerX" secondItem="nH4-p3-2ES" secondAttribute="centerX" id="Miz-mI-gdX"/>
+                            <constraint firstItem="nH4-p3-2ES" firstAttribute="bottom" secondItem="oE2-le-agu" secondAttribute="bottom" constant="50" id="SQL-5x-pSe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nH4-p3-2ES"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="homeTransitionFromAppending" id="kfn-A6-Aff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="so0-i3-In5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798.5507246376812" y="137.94642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CXL-nG-28R">
@@ -79,4 +112,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kfn-A6-Aff"/>
+    </inferredMetricsTieBreakers>
 </document>

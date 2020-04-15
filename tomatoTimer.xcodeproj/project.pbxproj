@@ -18,6 +18,7 @@
 		4B50A3CE2443A9E8000EC8F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3CD2443A9E8000EC8F4 /* MainViewController.swift */; };
 		4B50A3D02443AA21000EC8F4 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3CF2443AA21000EC8F4 /* CellController.swift */; };
 		4B50A3D22443AAE8000EC8F4 /* TomatoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50A3D12443AAE8000EC8F4 /* TomatoCell.swift */; };
+		4B7010FC24451FA800A73354 /* AppendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7010FB24451FA800A73354 /* AppendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4B50A3CD2443A9E8000EC8F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4B50A3CF2443AA21000EC8F4 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		4B50A3D12443AAE8000EC8F4 /* TomatoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoCell.swift; sourceTree = "<group>"; };
+		4B7010FB24451FA800A73354 /* AppendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				4B50A39E2443A47B000EC8F4 /* Main.storyboard */,
 				4B50A3CD2443A9E8000EC8F4 /* MainViewController.swift */,
 				4B50A3CF2443AA21000EC8F4 /* CellController.swift */,
+				4B7010FB24451FA800A73354 /* AppendViewController.swift */,
 				4B50A3A42443A47C000EC8F4 /* Assets.xcassets */,
 				4B50A3A62443A47C000EC8F4 /* LaunchScreen.storyboard */,
 				4B50A3A92443A47C000EC8F4 /* Info.plist */,
@@ -270,6 +273,7 @@
 			files = (
 				4B50A3A32443A47B000EC8F4 /* tomatoTimer.xcdatamodeld in Sources */,
 				4B50A3D22443AAE8000EC8F4 /* TomatoCell.swift in Sources */,
+				4B7010FC24451FA800A73354 /* AppendViewController.swift in Sources */,
 				4B50A3992443A47B000EC8F4 /* AppDelegate.swift in Sources */,
 				4B50A39B2443A47B000EC8F4 /* SceneDelegate.swift in Sources */,
 				4B50A3CE2443A9E8000EC8F4 /* MainViewController.swift in Sources */,
